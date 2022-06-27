@@ -3970,10 +3970,11 @@ input, select, textarea {
 
 				#nav > ul > li.current a, #nav > ul > li.current span {
 					background-color: rgba(255, 255, 255, 0.05);
+					text-decoration: underline;
 				}
 
-				#nav > ul > li.active a, #nav > ul > li.active span {
-				}
+				/* #nav > ul > li.active a, #nav > ul > li.active span {
+				} */
 
 		.dropotron {
 			background-color: #ffffff;
