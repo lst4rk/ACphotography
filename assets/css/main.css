@@ -35,7 +35,7 @@ body {
 	position: relative;
 }
 
-html, body, #wrapper{
+html, #wrapper{
 	height: 100vh;
 	overflow: auto;
 }
@@ -120,7 +120,7 @@ input, select, textarea {
 /* Typography */
 
 	html {
-		font-size: 14pt;
+		font-size: 13pt;
 	}
 
 		@media screen and (max-width: 1680px) {
@@ -2754,7 +2754,6 @@ input, select, textarea {
 /* Wrapper */
 
 	.wrapper {
-		padding: 8rem 0 0 0 ;
 		position: relative;
 		min-height: 100%;
 	}
@@ -3411,7 +3410,7 @@ input, select, textarea {
 		background-repeat: repeat, no-repeat;
 		background-size: auto, cover; */
 		text-align: center;
-		padding-bottom: 150px;
+		/* margin-bottom: 150px; */
 	}
 
 		#banner input[type="submit"],
@@ -3564,8 +3563,9 @@ input, select, textarea {
 			transition: transform 1s ease-in-out, opacity 1.25s ease-in-out;
 			position: relative;
 			/* z-index: 999; */
-			margin: 3rem 0 0 0;
-			height: 70%;
+			/* margin: 3rem 0 0 0; */
+			/* height: calc("100vh - 150px"); */
+			height: 100%;
 			width: 70%;
 			max-width: 1280px;
 			max-height: 100%;
@@ -3999,7 +3999,7 @@ input, select, textarea {
 		}
 
 			.dropotron.level-0 {
-				margin-left: 1.5rem;
+				/* margin-left: 1.5rem; */
 				margin-top: 1rem;
 			}
 
@@ -4050,13 +4050,13 @@ input, select, textarea {
 				margin-top: -1rem;
 			}
 
-		@media screen and (max-width: 1280px) {
+		/* @media screen and (max-width: 1280px) {
 
 			#nav > ul > li a, #nav > ul > li span {
 				padding: 0.5rem 1rem;
 			}
 
-		}
+		} */
 
 		@media screen and (max-width: 1280px) {
 
@@ -4077,12 +4077,13 @@ input, select, textarea {
 		background-position: center, center;
 		background-repeat: repeat, no-repeat;
 		background-size: auto, cover; */
+		/* padding-bottom: 2rem; */
 		position: absolute;
 		width: 100%;
 		bottom: 0;
 		display: flex;
 		flex-direction: column;
-		justify-content: flex-end;
+		/* justify-content: flex-end; */
 		text-align: center;
 		height: 150px;
 	}
@@ -4204,7 +4205,7 @@ input, select, textarea {
 	} */
 
 	#navPanel {
-		background-color: rgba(46, 46, 46, 0.7);
+		background-color: rgba(25, 25, 25, 0.9);
 		background-size: auto, auto;
 		background-repeat: repeat, no-repeat;
 		-moz-transform: translateX(20rem);
@@ -4216,7 +4217,10 @@ input, select, textarea {
 		-ms-transition: -ms-transform 0.5s ease 0s, box-shadow 0.5s ease 0s, visibility 0.5s 0s;
 		transition: transform 0.5s ease 0s, box-shadow 0.5s ease 0s, visibility 0.5s 0s;
 		-webkit-overflow-scrolling: touch;
+		font-family: "Roboto", Arial, Helvetica, sans-serif;
 		box-shadow: none;
+		font-size: 1.2rem;
+		letter-spacing: 0.05rem;
 		color: #ffffff;
 		height: 100%;
 		max-width: 80%;
