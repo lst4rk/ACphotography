@@ -3418,7 +3418,7 @@ input, select, textarea {
 		background-size: auto, cover; */
 		text-align: center;
 		/* margin-bottom: 150px; */
-		margin-right: 0 !important;
+		/* margin-right: 0 !important; */
 
 	}
 
@@ -3592,7 +3592,7 @@ input, select, textarea {
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			margin-right: 0 !important;
+			/* margin-left: 0 !important; */
 		}
 			@media screen and (max-width: 1400px) {
 				
@@ -3606,6 +3606,10 @@ input, select, textarea {
 				#banner > .content {
 					width: 90%;
 				}
+			}
+
+			.main > .content {
+				flex-direction: column !important;
 			}
 
 		.bannerTextContent {
@@ -3703,10 +3707,12 @@ input, select, textarea {
 
 			#banner {
 				padding: 7rem 2rem 7rem 2rem ;
-				display: block;
+				flex-direction: column;
+				/* display: block; */
 				margin: 0;
 				/* min-height: calc(75vh + 7rem); */
 			}
+
 
 			#banner .textContent {
 				width: 80%;
