@@ -120,13 +120,13 @@ input, select, textarea {
 /* Typography */
 
 	html {
-		font-size: 13pt;
+		font-size: 12pt;
 	}
 
 		@media screen and (max-width: 1680px) {
 
 			html {
-				font-size: 12pt;
+				font-size: 10pt;
 			}
 
 		}
@@ -134,7 +134,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			html {
-				font-size: 11pt;
+				font-size: 9pt;
 			}
 
 		}
@@ -142,7 +142,7 @@ input, select, textarea {
 		@media screen and (max-width: 360px) {
 
 			html {
-				font-size: 10pt;
+				font-size: 9pt;
 			}
 
 		}
@@ -2047,6 +2047,10 @@ input, select, textarea {
 				}
 
 /* Form */
+	
+	.form {
+		text-align: center;
+	}
 
 	form {
 		margin: 0 0 2rem 0;
@@ -2210,7 +2214,7 @@ input, select, textarea {
 	}
 
 	label {
-		color: #000000;
+		color: white;
 	}
 
 	input[type="text"],
@@ -2221,7 +2225,7 @@ input, select, textarea {
 	input[type="url"],
 	select,
 	textarea {
-		border-color: rgba(0, 0, 0, 0.125);
+		border-color: white;
 	}
 
 		input[type="text"]:focus,
@@ -2241,7 +2245,7 @@ input, select, textarea {
 	}
 
 		select option {
-			color: #000000;
+			color: white;
 			background-color: #ffffff;
 		}
 
@@ -2252,7 +2256,7 @@ input, select, textarea {
 
 		input[type="checkbox"] + label:before,
 		input[type="radio"] + label:before {
-			border-color: rgba(0, 0, 0, 0.125);
+			border-color: white;
 		}
 
 	input[type="checkbox"]:checked + label:before,
@@ -2272,19 +2276,19 @@ input, select, textarea {
 	}
 
 	::-webkit-input-placeholder {
-		color: #000000 !important;
+		color: white !important;
 	}
 
 	:-moz-placeholder {
-		color: #000000 !important;
+		color: white !important;
 	}
 
 	::-moz-placeholder {
-		color: #000000 !important;
+		color: white !important;
 	}
 
 	:-ms-input-placeholder {
-		color: #000000 !important;
+		color: white !important;
 	}
 
 /* Icon */
@@ -3262,7 +3266,7 @@ input, select, textarea {
 				}
 
 			.features > ul:first-child {
-				margin-right: 4rem;
+				/* margin-right: 4rem; */
 				text-align: right;
 			}
 
@@ -3411,7 +3415,17 @@ input, select, textarea {
 		background-size: auto, cover; */
 		text-align: center;
 		/* margin-bottom: 150px; */
+		margin-right: 0 !important;
+
 	}
+
+	#banner.main {
+		padding-top: 4rem;
+	}
+
+	/* #banner {
+		padding: 7.5rem 8rem 5.5rem 8rem;
+	} */
 
 		#banner input[type="submit"],
 		#banner input[type="reset"],
@@ -3514,31 +3528,31 @@ input, select, textarea {
 			box-shadow: inset 0 -1px 0 0 #ffffff;
 		} */
 
-		@media screen and (max-width: 1280px) {
+		/* @media screen and (max-width: 1280px) {
 
 			#banner {
 				padding-bottom: 5.25rem;
 			}
 
-				/* #banner:after {
+				#banner:after {
 					background-size: 125% 100%;
 					height: 6rem;
-				} */
+				}
 
-		}
+		} */
 
-		@media screen and (max-width: 736px) {
+		/* @media screen and (max-width: 736px) {
 
 			#banner {
 				padding-bottom: 3.25rem;
 			}
 
-				/* #banner:after {
+				#banner:after {
 					background-size: 125% 100%;
 					height: 4rem;
-				} */
+				}
 
-		}
+		} */
 
 		/* #banner:before {
 			pointer-events: none;
@@ -3567,14 +3581,63 @@ input, select, textarea {
 			/* height: calc("100vh - 150px"); */
 			height: 100%;
 			width: 70%;
-			max-width: 1280px;
-			max-height: 100%;
+			max-width: 760px;
+			max-height: 90%;
 			min-width: 480px;
 			min-height: 400px;
 			display: flex;
 			align-items: center;
 			justify-content: center;
 		}
+
+		.bannerTextContent {
+			height: 600px;
+			/* width: 70%; */
+			/* max-width: 800px; */
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin: 0 auto;
+			padding: 7.5rem 15% 5.5rem 15%;
+		}
+
+				#banner > .textContent {
+					-moz-transition: -moz-transform 1s ease-in-out, opacity 1.25s ease-in-out;
+					-webkit-transition: -webkit-transform 1s ease-in-out, opacity 1.25s ease-in-out;
+					-ms-transition: -ms-transform 1s ease-in-out, opacity 1.25s ease-in-out;
+					transition: transform 1s ease-in-out, opacity 1.25s ease-in-out;
+					width: 200px;
+					/* height: 100%; */
+					min-width: 0;
+					min-height: 0;
+					flex: 0 0 50%;
+					display: flex;
+					align-items: center;
+					padding: 0 1rem;
+				}
+
+				#banner > .profImg {
+					height: 100%;
+					padding-top: 2rem;
+				}
+
+					#banner > .textContent * {
+						text-align: center;
+					}
+
+
+				#banner > .profImg {
+					background-image: url("../../images/attilioheadshot.jpg");
+					background-position: center;
+					background-repeat: no-repeat;
+					background-size: contain;
+					flex: 0 0 50%;
+				}
+
+				/* .bannerTextContent > img {
+					max-width: 400px;
+					min-width: 0;
+				} */
 
 			#banner > .content > :last-child {
 				margin-bottom: 0;
@@ -3587,6 +3650,10 @@ input, select, textarea {
 				max-width: 100%;
 			}
 
+		.bannerFormContent *{
+			text-align: center;
+		}
+	
 		body.is-preload #banner:before {
 			opacity: 1;
 		}
@@ -3599,15 +3666,7 @@ input, select, textarea {
 			opacity: 0;
 		}
 
-		/* @media screen and (max-width: 1280px) {
-
-			#banner {
-				padding: 7.5rem 0 5.5rem 0;
-			}
-
-		} */
-
-		@media screen and (max-width: 980px) {
+		@media screen and (max-width: 1280px) {
 
 			#banner {
 				padding: 7.5rem 6rem 5.5rem 6rem;
@@ -3615,11 +3674,30 @@ input, select, textarea {
 
 		}
 
+		@media screen and (max-width: 980px) {
+
+			#banner {
+				padding: 7.5rem 4rem 5.5rem 4rem;
+			}
+		}
+
 		@media screen and (max-width: 736px) {
 
 			#banner {
-				padding: 8rem 2rem 6rem 2rem ;
+				padding: 7rem 2rem 7rem 2rem ;
+				display: block;
+				margin: 0;
 				/* min-height: calc(75vh + 7rem); */
+			}
+
+			#banner .textContent {
+				width: 80%;
+				margin: 0 auto;
+				padding: 2rem 0;
+			}
+
+			#banner .profImg {
+				height: 40%;
 			}
 
 		}
@@ -3630,15 +3708,19 @@ input, select, textarea {
 				padding: 10rem 2rem 8rem 2rem ;
 			}
 
+			.bannerTextContent {
+				padding: 2rem 0 0 0 !important;
+			}
+
 		}
 
-		@media screen and (max-width: 480px) {
+		/* @media screen and (max-width: 480px) {
 
 			#banner br {
 				display: none;
 			}
 
-		}
+		} */
 
 /* Header */
 
@@ -3960,7 +4042,7 @@ input, select, textarea {
 					border-radius: 2rem;
 					border: 0;
 					box-shadow: 0;
-					font-size: 1.3rem;
+					font-size: 1rem;
 					padding: 0.625rem 1.5rem;
 					text-transform: uppercase;
 				}
