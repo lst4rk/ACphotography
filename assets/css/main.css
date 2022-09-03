@@ -3586,7 +3586,7 @@ input, select, textarea {
 			width: 70%;
 			/* max-width: 760px; */
 			/* max-height: 90%; */
-			min-width: 480px;
+			/* min-width: 480px; */
 			min-height: 400px;
 			display: flex;
 			align-items: center;
