@@ -3408,6 +3408,9 @@ input, select, textarea {
 		-webkit-justify-content: center;
 		-ms-justify-content: center;
 		justify-content: center;
+		height: -moz-calc(100% - 150px - 3rem); /* Firefox */
+		height: -webkit-calc(100% - 150px - 3rem); /* Chrome, Safari */
+		height: calc(100% - 150px - 3rem); /* IE9+ and future browsers */
 		align-items: center;
 		/* background-image: linear-gradient(90deg, rgba(58, 58, 58, 0.6), rgba(58, 58, 58, 0.6)), url("../../images/banner.jpg");
 		background-position: center, center;
@@ -3581,14 +3584,27 @@ input, select, textarea {
 			/* height: calc("100vh - 150px"); */
 			height: 100%;
 			width: 70%;
-			max-width: 760px;
-			max-height: 90%;
+			/* max-width: 760px; */
+			/* max-height: 90%; */
 			min-width: 480px;
 			min-height: 400px;
 			display: flex;
 			align-items: center;
 			justify-content: center;
 		}
+			@media screen and (max-width: 1400px) {
+				
+				#banner > .content {
+					width: 85%;
+				}
+			}
+
+			@media screen and (max-width: 1280px) {
+				
+				#banner > .content {
+					width: 90%;
+				}
+			}
 
 		.bannerTextContent {
 			height: 600px;
