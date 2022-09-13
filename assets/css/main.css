@@ -3709,6 +3709,7 @@ input, select, textarea {
 			#banner {
 				padding: 2rem 2rem 7rem 2rem ;
 				flex-direction: column;
+				justify-content: start;
 				/* display: block; */
 				margin: 0;
 				min-height: calc(75vh - 4rem);
