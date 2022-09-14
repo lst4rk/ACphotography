@@ -3409,15 +3409,15 @@ input, select, textarea {
 		-ms-justify-content: center;
 		justify-content: center;
 		height: -moz-calc(100% - 150px - 3rem); /* Firefox */
-		height: -webkit-calc(100% - 150px - 3rem); /* Chrome, Safari */
-		height: calc(100% - 150px - 3rem); /* IE9+ and future browsers */
+		height: -webkit-calc(100% - 150px - 3rem); /*Chrome, Safari*/
+		height: calc(100 - 150px - 3rem); /*IE9+ and future browsers*/
 		align-items: center;
 		/* background-image: linear-gradient(90deg, rgba(58, 58, 58, 0.6), rgba(58, 58, 58, 0.6)), url("../../images/banner.jpg");
 		background-position: center, center;
 		background-repeat: repeat, no-repeat;
 		background-size: auto, cover; */
 		text-align: center;
-		/* margin-bottom: 150px; */
+		margin-bottom: 150px;
 		/* margin-right: 0 !important; */
 
 	}
@@ -3711,7 +3711,8 @@ input, select, textarea {
 				flex-direction: column;
 				/* display: block; */
 				margin: 0;
-				/* min-height: calc(75vh + 7rem); */
+				min-height: calc(75vh - 4rem);
+				height: 550px;
 			}
 
 
@@ -3722,8 +3723,13 @@ input, select, textarea {
 			}
 
 			#banner .profImg {
-				height: 40%;
+				height: 100%;
+				/* flex-grow: 1; */
 			}
+
+			/* #banner > .about {
+				flex-grow: 2;
+			} */
 
 		}
 
@@ -3734,7 +3740,7 @@ input, select, textarea {
 			}
 
 			.bannerTextContent {
-				padding: 2rem 0 0 0 !important;
+				padding-top: 2rem !important;
 			}
 
 		}
@@ -4185,14 +4191,14 @@ input, select, textarea {
 		background-repeat: repeat, no-repeat;
 		background-size: auto, cover; */
 		/* padding-bottom: 2rem; */
-		position: absolute;
+		position:fixed;
 		width: 100%;
 		bottom: 0;
 		display: flex;
 		flex-direction: column;
 		/* justify-content: flex-end; */
 		text-align: center;
-		/* height: 150px; */
+		height: 150px;
 		padding: 0 0 1rem 0 ;
 	}
 
